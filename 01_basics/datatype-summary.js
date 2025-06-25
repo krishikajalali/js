@@ -41,3 +41,35 @@ console.log(typeof heros) //object
 // javascript is dynamically typed (typescript is not: type dena pdta hai)
 
 //refer documentations to see result of typeof for different variables
+
+// *******************************************************************************************
+
+// MEMORY ALLOCATION
+
+// old langs- allocations and deletion all user had to do
+// modern and mid modern langs- garbage collectors do
+
+//primitive - stack memory (copy)
+//non primitive - heap memory (reference: og)
+
+let a= 10
+let b= a
+
+console.log(a) //10
+console.log(b) //10
+
+a = 5
+
+console.log(a) //5
+console.log(b) //10
+
+let user1 = {
+    name: "KJ",
+    age: 10
+}
+
+let user2= user1
+
+user1.name= "JK"
+
+console.log(user2) //name: 'JK'
